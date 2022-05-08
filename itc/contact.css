@@ -1,0 +1,82 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+#welcome-section{
+	background-color:lightskyblue;
+	display:flex;
+	flex-direction:column;
+	height:100vh;
+	align-items:center;
+	justify-content:center;
+}
+.banner1 {
+	height: 100%;
+	width: 100%;
+	background-image: url('kontak.jpg');
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font: italic 20px Georgia, Serif;
+	text-shadow: 0 2px 6px #555555;
+	}
+footer{
+	background-color:lightskyblue;
+	height:250px;
+	display:flex;
+	flex-direction:row;		
+	align-items:center;
+	justify-content:space-evenly;
+}
+footer div a{
+	background-color:black;
+	border-radius:50%;
+	height:150px;
+	width:150px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	white-space:pre-line;
+	overflow:hidden;
+}
+footer div a:hover{
+	border-radius:50%;
+	box-shadow:
+		-5px 5px 10px,
+		5px -5px 10px,
+		5px 5px 10px,
+		-5px -5px 10px;
+}
+footer div a img{
+	border-radius:50%;
+}
+footer div p{
+	text-align:center;
+}
+@media (max-width:800px){
+	nav{
+	background-color:red;
+	height:100px;
+	width:100%;
+	position:fixed;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:black;
+	z-index:1;
+}
+	main section{
+		margin:20px 10% 20px 10%;
+		display:grid;
+		justify-items:center;
+	}
+	footer{
+		background-color:grey;
+		height:100vh;
+		display:flex;
+		align-items:center;
+		justify-content:space-evenly;
+	}
+}
